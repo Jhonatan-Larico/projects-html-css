@@ -1,6 +1,12 @@
-body{
-    margin :0;
+*{
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{   
     /*evitar scroll*/
     position: fixed;
     top: 0;
@@ -18,7 +24,6 @@ header{
     height: 140px;
     display: grid;
     grid-template-rows:1fr 1fr;
-
 }
 header .header-icons-container{
     width: 100%;
@@ -27,12 +32,14 @@ header .header-icons-container{
     background-color: #47cfac;
 }
 header .header-icons-container .icons{
-    width: 300px;
-    height: auto;/*para que sea tan grande como su padre */
+    justify-self: end;/*grid*/
+    
     display: flex;
-    justify-items:flex-end ;
+    /* justify-items:flex-end ; */ 
     align-items: center;
     justify-content: space-between;
-    justify-self: end;
+
+    width: 300px;
+    height: auto;/*para que sea tan grande como su padre */
     margin-right:50px;
 }
